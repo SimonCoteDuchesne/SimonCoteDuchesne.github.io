@@ -18,36 +18,33 @@
 	<body>
 		<div id="container">
 		<script>addHeaderEn();</script>
-		    <p class="language"><a href="contact.html">Version française</a></p>
+		    <p class="language"><img src="images/Quebec-flag.png" style="float:left;width:25px;height:25px;" alt="Quebec Flag">&nbsp; <a href="contact.html">Version française</a></p>
 		    <div id="header">
-			    <h1> Nothing is easier than contacting me! </h1>
-			    <h2> use any of these mediums. Show me your moves! </h2>
-			    <p class="btn"><img src="images/home-header-btn.png"></p>
+			    <!--<h1> Nothing is easier than contacting me! </h1>-->
+			    <h1> You can reach me using this form </h1>
+			    <!--<p class="btn"><img src="images/home-header-btn.png"></p>-->
 		    </div>
 			<div id="content">
-				<h3 align="left">By email:</h3>
-				<a align="center" href="mailto:simoncoteduchesne@gmail.com"> simoncoteduchesne@gmail.com</a></p>
-				<h3 align="left">By phone:</h3>
-				<a href="tel:+14185573003">418-557-3003</a></p>
-				<h3>By form :</h3>
 				<div class="portfolio-item-email">
-					<form id="contact_form" action="https://formspree.io/simoncoteduchesne@gmail.com" method="POST" enctype="multipart/form-data">
-						<div class="row">
-							<label for="name">Name :</label>
-							<input id="name" class="input" name="name" type="text" value="" size="30" />
-						</div><br>
-						<div class="row">
-							<label for="email">Email :</label>
-							<input id="email" class="input" name="email" type="email" value="" size="50" />
-						</div><br>
-						<div class="row">
-							<label for="message">Your message :</label><br/><br>
-							<textarea id="message" class="input" type="text" name="message" rows="7" cols="105"></textarea><br />
-						</div>
-						<br><input id="submit_button" type="submit" value="Send email" />
+					<form
+					  action="https://formspree.io/f/xjvnwyqy"
+					  method="POST"
+					>
+					  <label>
+					    Your email:
+					    <input type="email" name="email">
+					  </label><br><br>
+					  <label for="name">Name:</label>
+						<input id="name" class="input" name="name" type="text" value="" size="30" />
+					  <label><br><br>
+					    Your message:<br><br>
+					    <textarea id="message" class="input" type="text" name="message" rows="7" cols="105"></textarea>
+					  </label>
+					  <br><br>
+					  <button type="submit">Send</button>
 					</form>
 				</div></p>
-				<h3>By social media :</h3>
+				<!--<h3>By social media :</h3>
 				<table>
 					<tr>
 						<th>
@@ -60,7 +57,7 @@
 							<a class="socialmedia" id="twitter" href="https://twitter.com/Simon_CoteDuch" target="_blank"><img src="images/twitter.png" alt="twitter"></a>
 						</th>
 					</tr>
-				</table>
+				</table>-->
 			</div>
 			<div id="footer">
 				<script>addFooterEn();</script>

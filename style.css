@@ -15,6 +15,10 @@ body {
 	position: center; width: 183px;
 }
 
+#flag {
+	width: 15px; height: 15px;
+}
+
 ul#nav {
 	width: 940px; list-style: none; overflow: hidden; margin: -134px auto 10px auto;
 }
@@ -252,56 +256,6 @@ div.panel.show {
 	}
 
 article {
-}
-
-.table-of-contents {
-	top: 0px;
-	left: 0px;
-	position: fixed;
-	background: #333;
-	box-shadow: inset -5px 0 5px 0px #000;
-	width: 200px;
-	font: 16px Helvetica, Arial, Sans-Serif; color: #fff; line-height: 24px;
-	padding-top: 20px;
-  	color: #fff;	
-}
-	.table-of-contents#xp{
-	height: 28%;
-	}
-	.table-of-contents#curri{	
-	height: 35%;
-	}
-
-.table-of-contents ul {
-  	margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
-
-.table-of-contents li {
-  	text-decoration: none;
-}
-.table-of-contents a {
-	color: #fff;
-    text-decoration: none;
-    display: block;
-    padding: 20px 20px 20px 20px;
-}
-
-.table-of-contents h2{
-	padding-left: 10px;
-	padding-bottom: 20px;
-}
-
-.table-of-contents h3{
-	padding-left: 20px;
-}
-
-.table-of-contents a:hover,
-.table-of-contents a:active {
-  	background: #336699;
-    text-decoration: none;
-    box-shadow: inset -5px 0 5px 0px #000;
 }
 
 h3:target {
