@@ -38,6 +38,7 @@ function addFooterFr()
 		//+ "<a id=\"social\" href=\"https://github.com/SimonCoteDuchesne\" target=\"_blank\"><img src=\"images/github.png\" alt=\"github\"></a>"
 		+ "<a id=\"social\" href=\"https://www.youtube.com/channel/UCl1uLG8YyiJt15HLcn9H37A\"><img src=\"images/Youtube.png\" alt=\"facebook\"></a>"		
 		+ "<a id=\"social\" href=\"https://steamcommunity.com/id/Barbabonbon/\"><img src=\"images/Steam.png\" alt=\"steam\"></a>"
+		+ "<a id=\"social\" href=\"https://www.geogebra.org/u/simoncoteduchesne\"><img src=\"images/Geogebra.png\" alt=\"geogebra\"></a>"
 		+ "<p id=\"menu\"><br><a href=\"index.html\">Accueil</a> | <a href=\"experiences.html\">Expérience</a> | <a href=\"curriculumvitae.html\">CV</a> | <a href=\"contact.html\">Contact</a></p>"
 }
 
@@ -53,6 +54,7 @@ function addFooterEn()
 		//+ "<a id=\"social\" href=\"https://github.com/SimonCoteDuchesne\" target=\"_blank\"><img src=\"images/github.png\" alt=\"github\"></a>"
 		+ "<a id=\"social\" href=\"https://www.youtube.com/channel/UCl1uLG8YyiJt15HLcn9H37A\"><img src=\"images/Youtube.png\" alt=\"facebook\"></a>"		
 		+ "<a id=\"social\" href=\"https://steamcommunity.com/id/Barbabonbon/\"><img src=\"images/Steam.png\" alt=\"steam\"></a>"
+		+ "<a id=\"social\" href=\"https://www.geogebra.org/u/simoncoteduchesne\"><img src=\"images/Geogebra.png\" alt=\"geogebra\"></a>"
 		+ "<p id=\"menu\"><br><a href=\"index_En.html\">Home</a> | <a href=\"experiences_En.html\">Experience</a> | <a href=\"curriculumvitae_En.html\">CV</a> | <a href=\"contact_En.html\">Contact</a></p>"
 }
 
