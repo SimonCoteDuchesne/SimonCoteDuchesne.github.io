@@ -6,7 +6,7 @@ function addHeaderFr()
 		    + "<p><a href=\"#\"><img src=\"images/SimonCoteDuchesne.png\" alt=\"Simon Côté-Duchesne\"/></a></p>"
 		    + "<ul id=\"nav\">"
 		    	+ "<a href=\"index.html\"><li>Accueil</li></a>"
-		    	+ "<a href=\"experiences.html\"><li>Expérience</li></a>"
+		    	+ "<a href=\"experiences.html\"><li>Expériences</li></a>"
 		    	+ "<a href=\"curriculumvitae.html\"><li>C.V.</li></a>"
 		    	+ "<a href=\"contact.html\"><li>Contact</li></a>"
 		    + "</ul>"
@@ -20,7 +20,7 @@ function addHeaderEn()
 		    + "<p><a href=\"#\"><img src=\"images/SimonCoteDuchesne.png\" alt=\"Simon Côté-Duchesne\"/></a></p>"
 		    + "<ul id=\"nav\">"
 		    	+ "<a href=\"index_En.html\"><li>Home</li></a>"
-		    	+ "<a href=\"experiences_En.html\"><li>Experience</li></a>"
+		    	+ "<a href=\"experiences_En.html\"><li>Experiences</li></a>"
 		    	+ "<a href=\"curriculumvitae_En.html\"><li>C.V.</li></a>"
 		    	+ "<a href=\"contact_En.html\"><li>Contact</li></a>"
 		    + "</ul>"
@@ -39,7 +39,7 @@ function addFooterFr()
 		+ "<a id=\"social\" href=\"https://www.youtube.com/channel/UCl1uLG8YyiJt15HLcn9H37A\"><img src=\"images/Youtube.png\" alt=\"facebook\"></a>"		
 		+ "<a id=\"social\" href=\"https://steamcommunity.com/id/Barbabonbon/\"><img src=\"images/Steam.png\" alt=\"steam\"></a>"
 		+ "<a id=\"social\" href=\"https://www.geogebra.org/u/simoncoteduchesne\"><img src=\"images/Geogebra.png\" alt=\"geogebra\"></a>"
-		+ "<p id=\"menu\"><br><a href=\"index.html\">Accueil</a> | <a href=\"experiences.html\">Expérience</a> | <a href=\"curriculumvitae.html\">CV</a> | <a href=\"contact.html\">Contact</a></p>"
+		+ "<p id=\"menu\"><br><a href=\"index.html\">Accueil</a> | <a href=\"experiences.html\">Expériences</a> | <a href=\"curriculumvitae.html\">CV</a> | <a href=\"contact.html\">Contact</a></p>"
 }
 
 function addFooterEn()
@@ -55,7 +55,7 @@ function addFooterEn()
 		+ "<a id=\"social\" href=\"https://www.youtube.com/channel/UCl1uLG8YyiJt15HLcn9H37A\"><img src=\"images/Youtube.png\" alt=\"facebook\"></a>"		
 		+ "<a id=\"social\" href=\"https://steamcommunity.com/id/Barbabonbon/\"><img src=\"images/Steam.png\" alt=\"steam\"></a>"
 		+ "<a id=\"social\" href=\"https://www.geogebra.org/u/simoncoteduchesne\"><img src=\"images/Geogebra.png\" alt=\"geogebra\"></a>"
-		+ "<p id=\"menu\"><br><a href=\"index_En.html\">Home</a> | <a href=\"experiences_En.html\">Experience</a> | <a href=\"curriculumvitae_En.html\">CV</a> | <a href=\"contact_En.html\">Contact</a></p>"
+		+ "<p id=\"menu\"><br><a href=\"index_En.html\">Home</a> | <a href=\"experiences_En.html\">Experiences</a> | <a href=\"curriculumvitae_En.html\">CV</a> | <a href=\"contact_En.html\">Contact</a></p>"
 }
 
 function addAccordion()
