@@ -1,0 +1,284 @@
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, input, textarea, blockquote {
+	margin: 0; padding: 0; border: 0;
+}
+
+body {
+	background: #f2f0eb url(images/bg.png);
+	font: 16px Helvetica, Arial, Sans-Serif; color: #636363; line-height: 24px;
+}
+
+#container {
+	width: 960px; margin: 0 auto;
+}
+
+#logo {
+	position: center; width: 183px;
+}
+
+#flag {
+	width: 15px; height: 15px;
+}
+
+ul#nav {
+	width: 940px; list-style: none; overflow: hidden; margin: -134px auto 10px auto;
+}
+	ul#nav a {
+		width: 126px; height: 33px; float: left; padding: 13px 0 0 0;
+		background: url(images/nav-bg.png); color: #444; text-decoration: none;
+		font-weight: bold; text-align: center; text-transform: uppercase;
+	}
+		ul#nav a:nth-child(1) {
+			margin: 0 60px 0 0;
+		}
+		ul#nav a:nth-child(2) {
+			margin: 0 316px 0 0;
+		}
+		ul#nav a:nth-child(3) {
+			margin: 0 60px 0 0;
+		}
+		ul#nav a:nth-child(4) {
+			margin: 0;
+		}
+		ul#nav li a {
+			color: #616369; text-decoration: none;
+		}
+			ul#nav li a:hover {
+				color: #a12121;
+			}
+
+p.language{
+	position: relative; right: -750px; top: 40px; display:block; overflow: hidden; color: white;
+}
+	p.language a{
+		color: white;
+	}
+
+#header {
+	height: 244px; padding: 52px 0 0 57px;
+	background: url(images/home-header.png);
+}
+
+#header.page {
+	height: 91px; padding: 52px 0 0 57px;
+	background: url(images/inner-header.jpg);
+}
+	#header h1 {
+		font: 38px Georgia, Serif; color: #f2f0eb; letter-spacing: 2px; margin: 30px 0 20px 0;
+		text-shadow: 0px 3px 3px #494949;
+	}
+	#header h2 {
+		width: 510px; font: 30px Georgia, Serif; color: #f2f0eb; letter-spacing: 2px; margin: 0 0 20px 0;
+		text-shadow: 0px 3px 3px #494949;
+	}
+	#header p.btn{
+		position: relative; right: -200px; top: -60px; display:block; overflow: hidden;
+	}	
+	#header a{
+		color: white;
+	}
+	
+#content {
+	background: url(images/content-bg.png) repeat-y;
+	padding: 57px 69px 50px 69px; overflow: hidden;
+}
+	#content h2 {
+		font: 30px Georgia, Serif; letter-spacing: 2px; margin: 0 0 20px 0;
+	}
+
+	#content h3 {
+		font: 26px Georgia, Serif; letter-spacing: 2px; margin: 0 0 20px 0;
+	}
+
+	#content #inner {
+		display: inline-block; width: 630px; height: 10px; float: right; font: 20px Georgia, Serif; letter-spacing: 2px; margin: 25px 0 0 0;
+	}
+	
+	#content p {
+		margin: 0 0 30px 0; text-align: justify; text-justify: inter-word;
+	}
+	
+	#content a {
+		color: #a12121; text-decoration: none;
+	}
+		#content a:hover {
+			color: #671111;
+		}
+		#content a.socialmedia {
+			float: left;
+		}
+
+	#content iframe {
+		display: inline-block; margin: 25px 0 0 0; float: right; padding: 45px 0 0 15px; border-style: solid; border-color: #556;
+	}
+	#content iframe.videogame {
+		display: inline-block; margin: 0 0 0 0; float: right; padding: 45px 0 0 15px; border-style: solid; border-color: #556;
+	}
+
+#cv {
+	background: url(images/content-bg.png) repeat-y;
+	padding: 30px 69px 50px 69px; overflow: hidden;
+}
+	#cv h2 {
+		position : relative; float: center; font: 30px Georgia, Serif; letter-spacing: 2px; margin: 0 0 20px 0;
+	}
+
+	#cv h3 {
+		font: 26px Georgia, Serif; letter-spacing: 2px; margin: 30px 20px 20px 0;
+	}
+
+	#cv h4 {
+		font: 18px Georgia, Serif; letter-spacing: 2px; margin: 0px 0px 0px 0;
+	}
+	
+	#cv p {
+		margin: 0 0 30px 0; text-align: justify; text-justify: inter-word;
+	}
+	
+	#cv a {
+		color: #a12121; text-decoration: none;
+	}
+		#cv a:hover {
+			color: #671111;
+		}
+	#cv object {
+		position: relative; float: middle; margin: 40px 0 0 0; width: 825px; height: 700px; border-style: solid; border-color: #556;
+	}
+
+#content .portfolio-item {
+	width: 240px; padding: 10px; background: #eee; text-align: center;
+	float: left; margin: 0 7px 14px 7px;
+}
+	#content .portfolio-item p.btn {
+		margin: 0;
+	}
+	#content .portfolio-item p {
+		margin: 0; text-align: center; font: 18px Georgia, Serif;
+	}
+	#content .portfolio-item p.btn a {
+		display: block; width: 183px; height: 30px; padding: 8px 0 0 0;
+		background: url(images/see-more-bg.png);
+		font-weight: bold; text-align: center; text-transform: uppercase;
+		 text-decoration: none;
+	}
+
+#content .portfolio-item-twitter {
+	width: 240px; padding: 10px; background: #eee; text-align: center;
+	float: left; margin: 0 7px 14px 7px;
+}
+	#content .portfolio-item-twitter img{
+		width: 62px; height: 59px; padding: 0 0 0 0;
+	}
+
+#content .portfolio-item-email {
+	font: 15px Georgia, Serif; width: 785px; padding: 10px; background: #eee; text-align: left;
+	float: left; margin: 0 7px 14px 7px;
+}
+	#content .portfolio-item-email input{
+		font: 15px Georgia, Serif; padding: 5px 5px 5px 5px;
+	}
+	#content .portfolio-item-email input#submit_button{
+		float: left; font: 15px Georgia, Serif; padding: 10px 10px 10px 10px background: #fff;
+	}
+		
+#content img.profile-pic {
+	float: right; margin: -40px 40px 0 0;
+}
+		
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-style: solid; border-color: #556;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd; 
+}
+
+button.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;    
+}
+
+button.accordion.active:after {
+    content: "\2796";
+}
+
+div.panel {
+    padding: 3px 18px;
+    background-color: #ddd;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+	display: block;
+    opacity: 1;
+    max-height: 2000px;
+}
+		
+#footer {
+	background: url(images/footer-bg.png) no-repeat; padding: 40px 0 0 0;
+	overflow: hidden; margin: 0 0 0 0;
+}
+	#footer p#copyright {
+		font-size: 12px; float: left; margin: 0 0 0 30px; color: #b8b6b2;
+	}
+	#footer p#back-top {
+		font-size: 12px; float: right; margin: 0 30px 0 0;
+	}
+		#footer a {
+		color: #a12121; text-decoration: none;
+	}
+		#footer a:hover {
+			color: #671111;
+	}
+	#footer a#social{
+			float: right; margin: 0 0 0 0; width: 75px; height: 75px
+	}
+	#footer a#twitter{
+			float: right; margin: 1px 0 0 0; width: 70px; height: 70px
+	}
+	#footer p#menu {
+			position: relative ; left: 350px; margin: 20px 0 0 0;
+	}
+
+article {
+}
+
+h3:target {
+  animation: highlight 1s ease;
+  text-decoration: none;
+}
+
+@keyframes highlight {
+  from { background: yellow; }
+  to { background: white; }
+}
+
+a.back-to-top {
+	display: none;
+	width: 60px;
+	height: 60px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+	background: #333 url(images/up-arrow.png) no-repeat center;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}

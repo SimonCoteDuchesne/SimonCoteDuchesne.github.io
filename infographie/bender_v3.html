@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Space Bender</title>
+
+  <script type="x-shader/x-vertex" id="vshaderbox">
+       uniform mat4 projection;
+       uniform mat4 modelview;
+
+       attribute vec3 vcoords;
+       attribute vec3 vnormal;
+       attribute vec2 vtexcoord;
+
+       varying vec3 fCoords;
+
+       void main() {
+          vec2 tmp = vtexcoord;
+          vec3 tmp2 = vnormal;
+
+          vec4 eyeCoords = modelview * vec4(vcoords,1.0);
+          gl_Position = projection * eyeCoords;
+          fCoords = vcoords;
+       }
+  </script>
+
+  <script type="x-shader/x-fragment" id="fshaderbox">
+       precision mediump float;
+
+       varying vec3 fCoords;
+
+       uniform samplerCube skybox;
+
+       void main() {
+            gl_FragColor = textureCube(skybox, fCoords);
+       }
+  </script>
+
+  <script type="x-shader/x-vertex" id="vshader">
+    uniform mat4 projection;
+    uniform mat4 modelview;
+    uniform vec4 lightPosition;
+    uniform mat3 normalMatrix;
+
+    attribute vec3 vcoords;
+    attribute vec3 vnormal;
+    attribute vec2 vtexcoord;
+
+    varying vec3 fN, fL, fE;
+    varying vec3 fviewCoords;
+    varying vec2 fTexCoord;
+
+    void main() 
+    {
+      vec4 eyeCoords = modelview * vec4(vcoords,1.0);
+      gl_Position = projection * eyeCoords;
+
+      vec3 pos = eyeCoords.xyz;
+      vec3 light = (lightPosition).xyz;
+
+      fL = normalize( light - pos );
+      fE = normalize(-pos);
+      fN = normalMatrix * normalize(vnormal);
+
+      fviewCoords = eyeCoords.xyz;
+      fTexCoord = vtexcoord;
+    }
+  </script>
+
+  <script type="x-shader/x-fragment" id="fshader">
+    precision mediump float;
+
+    uniform vec4 ambientProduct;
+    uniform vec4 diffuseProduct;
+    uniform vec4 specularProduct;
+    uniform float shininess;
+
+    uniform int fnoTexture;
+    uniform int fnoPhong;
+
+    varying vec3 fN, fL, fE;
+    varying vec3 fviewCoords;
+    varying highp vec2 fTexCoord;
+
+    uniform sampler2D texture;
+
+      void main() 
+      {
+        vec4 Color;
+
+        vec3 H = normalize( fL + fE );
+        vec4 ambient = ambientProduct;
+
+        float factorLN = max( dot(fL, fN), 0.0 );
+        vec4  diffuse = factorLN*diffuseProduct;
+
+        float factorNH = pow( max(dot(fN, H), 0.0), shininess );
+        vec4  specular = factorNH * specularProduct;
+
+        if( dot(fL, fN) < 0.0 )
+          specular = vec4(0.0, 0.0, 0.0, 1.0);
+
+        Color = ambient + diffuse + specular;
+        Color.a = 1.0;
+
+        if (fnoPhong == 1)
+        {
+          Color = ambient;
+          Color.a = 0.4;
+        }
+
+        if (fnoTexture == 1) 
+        {
+          gl_FragColor = Color * texture2D(texture, fTexCoord);
+        }
+        else
+          gl_FragColor = Color;
+     }
+  </script>
+
+  <script type="text/javascript" src="Common/simple-rotator.js"></script>
+  <script type="text/javascript" src="Common/basic-objects-IFS.js"></script>
+  <script type="text/javascript" src="Common/MV.js"></script>
+  <script type="text/javascript" src="Bender_v3.js"></script>
+
+</head>
+<body style="background-color:#DDD">
+  <noscript><hr><h3>This page requires Javascript and a web browser that supports WebGL</h3><hr></noscript>
+  <canvas width=800 height=800 id="glcanvas" style="background-color:black"></canvas>
+</body>
+</html>
