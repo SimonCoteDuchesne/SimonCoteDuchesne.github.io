@@ -71,7 +71,7 @@ p.language{
 		text-shadow: 0px 3px 3px #494949;
 	}
 	#header p.btn{
-		position: relative; right: -200px; top: -60px; display:block; overflow: hidden;
+		position: relative; right: -200px; top: -75px; display:block; overflow: hidden;
 	}	
 	#header a{
 		color: white;
